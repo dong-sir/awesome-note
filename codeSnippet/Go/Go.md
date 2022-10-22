@@ -1,8 +1,6 @@
+### 日志库
 
-
-
-
-日志库
+- logrus
 
 
 ### Go 语言随机测试工具 go-fuzz
@@ -28,7 +26,7 @@ for start := time.Now(); time.Since(start) < nodeListTimeout; time.Sleep(2 * tim
 
 ```
 
-```go
+``` golang
     pollingPeriod := 2 * time.Second
     timeout := 10 * time.Second
 
@@ -41,16 +39,12 @@ for start := time.Now(); time.Since(start) < nodeListTimeout; time.Sleep(2 * tim
 tag: ['test','time']
 
 
-
-
 // 多久之后 const.go
 time.Now().Add(duration365d).UTC()
 
-
-
 ### 生成文件夹
 
-```
+``` golang
 import (
     "github.com/pkg/errors"
 )

@@ -26,4 +26,19 @@ fmt.Printf("Type %T for %[1]v\n", days, days)
 // Type float64 for 365.2425
 ```
 
+7.3 整数回绕 (有限的取值范围)
 
+``` golang
+var red uint8 = 255
+red ++
+fmt.Println(red)
+// 0
+
+var number int8 = 127
+number ++
+fmt.Println(number)
+// -128
+```
+
+7.3.1 聚焦二进制位
+7.3.2 避免时间回绕
